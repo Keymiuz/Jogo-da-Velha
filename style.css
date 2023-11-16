@@ -1,0 +1,120 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 4px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #eee;
+}
+
+.message {
+  color: #333;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.reset-button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #2980b9;
+}
+
+.x-player {
+  color: #e74c3c; /* Vermelho */
+  font-size: 2em; /* Tamanho de fonte maior */
+  font-weight: bold;
+}
+
+.o-player {
+  color: #3498db; /* Azul */
+  font-size: 2em; /* Tamanho de fonte maior */
+  font-weight: bold;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .cell {
+  background-color: #333;
+  border-color: #444;
+}
+
+.dark-mode .cell:hover {
+  background-color: #444;
+}
+
+.dark-mode .message {
+  color: #fff;
+}
+
+.dark-mode .reset-button {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.dark-mode .reset-button:hover {
+  background-color: #2980b9;
+}
+
+.dark-mode h1 {
+  color: #fff;
+}
+
+.toggle-dark-mode {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-dark-mode:hover {
+  background-color: #2980b9;
+}
